@@ -9,7 +9,12 @@ import matplotlib.pyplot as plt
 # User settings
 # ---------------------------------------------------------------------
 
-json_dir = Path("./baseline_bench_data_liquid/")   # change this
+#json_dir = Path("./baseline_bench_data_liquid")   # liquid fcc
+#output_dir = Path("plots_liquid")
+
+json_dir = Path("./baseline_bench_data_whileLoopFlush")   # slightly perturbed fcc
+output_dir = Path("plots_fcc")
+
 file_pattern = "*.json"
 
 TIME_SCALE = 1e-6  # ns -> ms
@@ -315,7 +320,13 @@ for i, json_path in enumerate(json_files, start=1):
     fig = plot_benchmark_file(json_path)
 
     if SHOW_ONE_AT_A_TIME:
-        plt.show()
+#        plt.show()
+        output_dir.mkdir(parents=True, exist_ok=True)
+        output_path = output_dir / f"{json_path.stem}.png"
+        fig.savefig(output_path, dpi=300)
+        print(f"Saved {output_path}")
+        plt.close(fig)
+
     else:
         plt.show(block=False)
 
