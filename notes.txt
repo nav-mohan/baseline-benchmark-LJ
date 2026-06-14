@@ -1,0 +1,10 @@
+compare MEAM models whihc have LAMMPS ocunterparts as well. 
+
+genetate SIM FCC data and plots 
+
+FCC runs 
+	ilia is ok with step-discontinuities 
+	but spikes are not ok. 
+	those are maybe cache effects - but i'm pretty sure i've taken care of this
+	or likely neighborlist rebuilding - we dont want to time these as well. 
+	so redo the FCC simulations for all models

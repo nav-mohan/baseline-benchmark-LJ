@@ -1,0 +1,862 @@
+[
+    {
+        "model": "Sim_LAMMPS_AGNI_BotuBatraChapman_2017_Al__SM_666183636896_000",
+        "model_bench": {
+            "density": [],
+            "alat": [],
+            "energy": [],
+            "initTime_AVG": [],
+            "initTime_STD": [],
+            "cachedTime_AVG": [],
+            "cachedTime_STD": [],
+            "tinyMoveTime_AVG": [],
+            "tinyMoveTime_STD": [],
+            "largeMoveTime_AVG": [],
+            "largeMoveTime_STD": [],
+            "recalcTime_AVG": [],
+            "recalcTime_STD": [],
+            "cachedOverInit_AVG": [],
+            "cachedOverInit_STD": [],
+            "tinyMoveOverInit_AVG": [],
+            "tinyMoveOverInit_STD": [],
+            "largeMoveOverInit_AVG": [],
+            "largeMoveOverInit_STD": [],
+            "ratio_AVG": [],
+            "ratio_STD": [],
+            "numRuns_KEPT": [],
+            "numRuns_REMOVED": [],
+            "failed": [
+                {
+                    "i_alat": 0,
+                    "alat": -0.75,
+                    "density": 2.37037037037037,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 1,
+                    "alat": -0.8004997917534361,
+                    "density": 1.9494689849348354,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 2,
+                    "alat": -0.8499583506872137,
+                    "density": 1.6285723785568753,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 3,
+                    "alat": -0.8983756768013327,
+                    "density": 1.3791961776476602,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 4,
+                    "alat": -0.9457517700957934,
+                    "density": 1.182138907975424,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 5,
+                    "alat": -0.9920866305705955,
+                    "density": 1.0241208517267792,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 6,
+                    "alat": -1.0373802582257394,
+                    "density": 0.8957484455937761,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 7,
+                    "alat": -1.0816326530612244,
+                    "density": 0.7902429522357386,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 8,
+                    "alat": -1.124843815077051,
+                    "density": 0.7026245592662235,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 9,
+                    "alat": -1.1670137442732194,
+                    "density": 0.6291759120241589,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 10,
+                    "alat": -1.2081424406497292,
+                    "density": 0.5670816279265491,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 11,
+                    "alat": -1.2482299042065805,
+                    "density": 0.5141812684795182,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 12,
+                    "alat": -1.2872761349437736,
+                    "density": 0.4687970244055096,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 13,
+                    "alat": -1.3252811328613077,
+                    "density": 0.42961155543226337,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 14,
+                    "alat": -1.3622448979591837,
+                    "density": 0.3955800945909731,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 15,
+                    "alat": -1.3981674302374008,
+                    "density": 0.3658663404609268,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 16,
+                    "alat": -1.43304872969596,
+                    "density": 0.33979510991532874,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 17,
+                    "alat": -1.4668887963348602,
+                    "density": 0.316816962096252,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 18,
+                    "alat": -1.4996876301541024,
+                    "density": 0.29648148147612474,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 19,
+                    "alat": -1.531445231153686,
+                    "density": 0.27841689807926934,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 20,
+                    "alat": -1.5621615993336109,
+                    "density": 0.26231439643460946,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 21,
+                    "alat": -1.5918367346938775,
+                    "density": 0.24791592912894686,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 22,
+                    "alat": -1.6204706372344857,
+                    "density": 0.23500467495939908,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 23,
+                    "alat": -1.6480633069554353,
+                    "density": 0.22339751063517022,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 24,
+                    "alat": -1.6746147438567265,
+                    "density": 0.2129390284916096,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 25,
+                    "alat": -1.700124947938359,
+                    "density": 0.2034967506710055,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 26,
+                    "alat": -1.724593919200333,
+                    "density": 0.19495727620014433,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 27,
+                    "alat": -1.7480216576426488,
+                    "density": 0.18722316061883787,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 28,
+                    "alat": -1.7704081632653061,
+                    "density": 0.18021037471157086,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 29,
+                    "alat": -1.7917534360683047,
+                    "density": 0.17384622396841812,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 30,
+                    "alat": -1.812057476051645,
+                    "density": 0.16806763683721393,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 31,
+                    "alat": -1.8313202832153268,
+                    "density": 0.1628197499017742,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 32,
+                    "alat": -1.84954185755935,
+                    "density": 0.1580547334699146,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 33,
+                    "alat": -1.866722199083715,
+                    "density": 0.1537308128708575,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 34,
+                    "alat": -1.8828613077884215,
+                    "density": 0.1498114499163362,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 35,
+                    "alat": -1.8979591836734693,
+                    "density": 0.1462646561166248,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 36,
+                    "alat": -1.9120158267388587,
+                    "density": 0.14306241483996132,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 37,
+                    "alat": -1.9250312369845897,
+                    "density": 0.1401801940191706,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 38,
+                    "alat": -1.937005414410662,
+                    "density": 0.13759653451228535,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 39,
+                    "alat": -1.9479383590170762,
+                    "density": 0.1352927020189703,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 40,
+                    "alat": -1.9578300708038316,
+                    "density": 0.13325239269754965,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 41,
+                    "alat": -1.9666805497709288,
+                    "density": 0.13146148443814917,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 42,
+                    "alat": -1.9744897959183674,
+                    "density": 0.12990782721842972,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 43,
+                    "alat": -1.9812578092461473,
+                    "density": 0.12858106717156273,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 44,
+                    "alat": -1.986984589754269,
+                    "density": 0.12747249998782453,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 45,
+                    "alat": -1.9916701374427321,
+                    "density": 0.1265749500959319,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 46,
+                    "alat": -1.995314452311537,
+                    "density": 0.12588267276337448,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 47,
+                    "alat": -1.997917534360683,
+                    "density": 0.12539127684500384,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 48,
+                    "alat": -1.9994793835901707,
+                    "density": 0.125097666419171,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 49,
+                    "alat": -2.0,
+                    "density": 0.125,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                }
+            ]
+        }
+    },
+    {
+        "model": "LennardJones612_UniversalShifted__MO_959249795837_003",
+        "lj_bench": {
+            "density": [],
+            "alat": [],
+            "energy": [],
+            "initTime_AVG": [],
+            "initTime_STD": [],
+            "cachedTime_AVG": [],
+            "cachedTime_STD": [],
+            "tinyMoveTime_AVG": [],
+            "tinyMoveTime_STD": [],
+            "largeMoveTime_AVG": [],
+            "largeMoveTime_STD": [],
+            "recalcTime_AVG": [],
+            "recalcTime_STD": [],
+            "cachedOverInit_AVG": [],
+            "cachedOverInit_STD": [],
+            "tinyMoveOverInit_AVG": [],
+            "tinyMoveOverInit_STD": [],
+            "largeMoveOverInit_AVG": [],
+            "largeMoveOverInit_STD": [],
+            "ratio_AVG": [],
+            "ratio_STD": [],
+            "numRuns_KEPT": [],
+            "numRuns_REMOVED": [],
+            "failed": [
+                {
+                    "i_alat": 0,
+                    "alat": -0.75,
+                    "density": 2.37037037037037,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 1,
+                    "alat": -0.8004997917534361,
+                    "density": 1.9494689849348354,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 2,
+                    "alat": -0.8499583506872137,
+                    "density": 1.6285723785568753,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 3,
+                    "alat": -0.8983756768013327,
+                    "density": 1.3791961776476602,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 4,
+                    "alat": -0.9457517700957934,
+                    "density": 1.182138907975424,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 5,
+                    "alat": -0.9920866305705955,
+                    "density": 1.0241208517267792,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 6,
+                    "alat": -1.0373802582257394,
+                    "density": 0.8957484455937761,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 7,
+                    "alat": -1.0816326530612244,
+                    "density": 0.7902429522357386,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 8,
+                    "alat": -1.124843815077051,
+                    "density": 0.7026245592662235,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 9,
+                    "alat": -1.1670137442732194,
+                    "density": 0.6291759120241589,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 10,
+                    "alat": -1.2081424406497292,
+                    "density": 0.5670816279265491,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 11,
+                    "alat": -1.2482299042065805,
+                    "density": 0.5141812684795182,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 12,
+                    "alat": -1.2872761349437736,
+                    "density": 0.4687970244055096,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 13,
+                    "alat": -1.3252811328613077,
+                    "density": 0.42961155543226337,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 14,
+                    "alat": -1.3622448979591837,
+                    "density": 0.3955800945909731,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 15,
+                    "alat": -1.3981674302374008,
+                    "density": 0.3658663404609268,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 16,
+                    "alat": -1.43304872969596,
+                    "density": 0.33979510991532874,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 17,
+                    "alat": -1.4668887963348602,
+                    "density": 0.316816962096252,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 18,
+                    "alat": -1.4996876301541024,
+                    "density": 0.29648148147612474,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 19,
+                    "alat": -1.531445231153686,
+                    "density": 0.27841689807926934,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 20,
+                    "alat": -1.5621615993336109,
+                    "density": 0.26231439643460946,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 21,
+                    "alat": -1.5918367346938775,
+                    "density": 0.24791592912894686,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 22,
+                    "alat": -1.6204706372344857,
+                    "density": 0.23500467495939908,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 23,
+                    "alat": -1.6480633069554353,
+                    "density": 0.22339751063517022,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 24,
+                    "alat": -1.6746147438567265,
+                    "density": 0.2129390284916096,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 25,
+                    "alat": -1.700124947938359,
+                    "density": 0.2034967506710055,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 26,
+                    "alat": -1.724593919200333,
+                    "density": 0.19495727620014433,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 27,
+                    "alat": -1.7480216576426488,
+                    "density": 0.18722316061883787,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 28,
+                    "alat": -1.7704081632653061,
+                    "density": 0.18021037471157086,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 29,
+                    "alat": -1.7917534360683047,
+                    "density": 0.17384622396841812,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 30,
+                    "alat": -1.812057476051645,
+                    "density": 0.16806763683721393,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 31,
+                    "alat": -1.8313202832153268,
+                    "density": 0.1628197499017742,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 32,
+                    "alat": -1.84954185755935,
+                    "density": 0.1580547334699146,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 33,
+                    "alat": -1.866722199083715,
+                    "density": 0.1537308128708575,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 34,
+                    "alat": -1.8828613077884215,
+                    "density": 0.1498114499163362,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 35,
+                    "alat": -1.8979591836734693,
+                    "density": 0.1462646561166248,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 36,
+                    "alat": -1.9120158267388587,
+                    "density": 0.14306241483996132,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 37,
+                    "alat": -1.9250312369845897,
+                    "density": 0.1401801940191706,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 38,
+                    "alat": -1.937005414410662,
+                    "density": 0.13759653451228535,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 39,
+                    "alat": -1.9479383590170762,
+                    "density": 0.1352927020189703,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 40,
+                    "alat": -1.9578300708038316,
+                    "density": 0.13325239269754965,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 41,
+                    "alat": -1.9666805497709288,
+                    "density": 0.13146148443814917,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 42,
+                    "alat": -1.9744897959183674,
+                    "density": 0.12990782721842972,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 43,
+                    "alat": -1.9812578092461473,
+                    "density": 0.12858106717156273,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 44,
+                    "alat": -1.986984589754269,
+                    "density": 0.12747249998782453,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 45,
+                    "alat": -1.9916701374427321,
+                    "density": 0.1265749500959319,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 46,
+                    "alat": -1.995314452311537,
+                    "density": 0.12588267276337448,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 47,
+                    "alat": -1.997917534360683,
+                    "density": 0.12539127684500384,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 48,
+                    "alat": -1.9994793835901707,
+                    "density": 0.125097666419171,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                },
+                {
+                    "i_alat": 49,
+                    "alat": -2.0,
+                    "density": 0.125,
+                    "kind": "python_exception",
+                    "exitcode": 0,
+                    "error": "ValueError('high - low < 0')"
+                }
+            ]
+        }
+    }
+]
