@@ -16,6 +16,9 @@ from ase.calculators.kim import KIM
 from ase.lattice.cubic import FaceCenteredCubic
 
 
+NCELLS_PER_SIDE = 1
+TIMEOUT = 600
+
 # =============================================================================
 # Small timing helpers
 # =============================================================================
@@ -203,84 +206,7 @@ def mean_std_filtered(values, keep_mask):
 # FCC / equilibrium helpers
 # =============================================================================
 
-def cubic_cell_energy(alat, atoms, ncells_per_side):
-    acell = alat[0] * ncells_per_side
-    atoms.set_cell([acell, acell, acell], scale_atoms=True)
-    e = atoms.get_potential_energy()
-    return e
 
-
-def find_equilibrium_fcc(
-    model: str,
-    species: list,
-    ncells_per_side: int = 2,
-    grid_stepsize: float = 0.01,
-    min_alat: float = 2.5,
-    max_alat: float = 10.0,
-):
-    alat_ave = []
-
-    for spec in species:
-        atoms_interacting_energy, atoms_interacting_force = (
-            kim_ase_utils.check_if_atoms_interacting(
-                model,
-                symbols=[spec, spec],
-            )
-        )
-
-        if not atoms_interacting_energy:
-            print(
-                f"WARNING: {model} has no non-trivial energy interaction "
-                f"for species {spec}. Skipping..."
-            )
-            continue
-
-        if not atoms_interacting_force:
-            print(
-                f"WARNING: {model} has no non-trivial force interaction "
-                f"for species {spec}. Skipping..."
-            )
-            continue
-
-        calc = KIM(model)
-        alat = min_alat
-        found = False
-
-        while alat <= max_alat:
-            atoms = FaceCenteredCubic(
-                size=(ncells_per_side, ncells_per_side, ncells_per_side),
-                latticeconstant=alat,
-                symbol=spec,
-                pbc=True,
-            )
-            atoms.set_calculator(calc)
-
-            try:
-                res = scipy.optimize.minimize(
-                    cubic_cell_energy,
-                    alat,
-                    args=(atoms, ncells_per_side),
-                    method="Nelder-Mead",
-                    tol=1e-6,
-                )
-
-                if res.success and np.isfinite(res.fun):
-                    alat_ave.append(float(res.x[0]))
-                    found = True
-                    break
-
-                alat += grid_stepsize
-
-            except BaseException:
-                alat += grid_stepsize
-
-        if not found:
-            print(f"WARNING: could not find FCC equilibrium alat for {model} {spec}")
-
-    if len(alat_ave) == 0:
-        return np.float64(-1.0)
-
-    return float(np.mean(alat_ave))
 
 
 def generate_alat_range(alat_eq, min_frac=0.75, max_frac=2.0, num_alats=50):
@@ -356,54 +282,73 @@ def benchmark_one_alat_worker(
         tinyMoveEnergy_runs = []
         largeMoveEnergy_runs = []
 
+
         for t in range(average_iterations):
-            seed_spec = 1000000 * i_alat + 10 * t + 0
-            seed_init = 1000000 * i_alat + 10 * t + 1
-            seed_small = 1000000 * i_alat + 10 * t + 2
-            seed_large = 1000000 * i_alat + 10 * t + 3
+            atoms = None
+            calc = None
 
-            atoms = atoms_alat.copy()
+            try:
+                seed_spec = 1000000 * i_alat + 10 * t + 0
+                seed_init = 1000000 * i_alat + 10 * t + 1
+                seed_small = 1000000 * i_alat + 10 * t + 2
+                seed_large = 1000000 * i_alat + 10 * t + 3
 
-            kim_ase_utils.randomize_species(
-                atoms,
-                species,
-                seed=seed_spec,
-            )
+                atoms = atoms_alat.copy()
 
-            base_positions = atoms.get_positions().copy()
+                kim_ase_utils.randomize_species(
+                    atoms,
+                    species,
+                    seed=seed_spec,
+                )
 
-            calc = KIM(model)
-            atoms.set_calculator(calc)
+                calc = KIM(model)
+                atoms.set_calculator(calc)
 
-            # First/cold-ish compute configuration
-            kim_ase_utils.randomize_positions(
-                atoms,
-                pert_amp * alat,
-                seed=seed_init,
-            )
+                # First/cold-ish compute configuration
+                kim_ase_utils.randomize_positions(
+                    atoms,
+                    pert_amp * alat,
+                    seed=seed_init,
+                )
 
-            pe_init, t_init = time_energy(atoms)
+                pe_init, t_init = time_energy(atoms)
 
-            initTime_runs.append(t_init)
-            initEnergy_runs.append(pe_init)
+                initTime_runs.append(t_init)
+                initEnergy_runs.append(pe_init)
 
-            diag = neighborlist_rebuild_diagnostic(
-                atoms=atoms,
-                base_positions=base_positions,
-                alat=alat,
-                pert_small=pert_small,
-                pert_large=pert_amp,
-                seed_small=seed_small,
-                seed_large=seed_large,
-            )
+                # Better: use the already-computed configuration as reference.
+                base_positions = atoms.get_positions().copy()
 
-            cachedTime_runs.append(diag["cached_time"])
-            tinyMoveTime_runs.append(diag["tiny_move_time"])
-            largeMoveTime_runs.append(diag["large_move_time"])
+                diag = neighborlist_rebuild_diagnostic(
+                    atoms=atoms,
+                    base_positions=base_positions,
+                    alat=alat,
+                    pert_small=pert_small,
+                    pert_large=pert_amp,
+                    seed_small=seed_small,
+                    seed_large=seed_large,
+                )
 
-            cachedEnergy_runs.append(diag["cached_energy"])
-            tinyMoveEnergy_runs.append(diag["tiny_move_energy"])
-            largeMoveEnergy_runs.append(diag["large_move_energy"])
+                cachedTime_runs.append(diag["cached_time"])
+                tinyMoveTime_runs.append(diag["tiny_move_time"])
+                largeMoveTime_runs.append(diag["large_move_time"])
+
+                cachedEnergy_runs.append(diag["cached_energy"])
+                tinyMoveEnergy_runs.append(diag["tiny_move_energy"])
+                largeMoveEnergy_runs.append(diag["large_move_energy"])
+
+            # clear the calculator memory after each averaging-iteration
+            finally:
+                if atoms is not None:
+                    atoms.calc = None
+
+                if calc is not None and hasattr(calc, "clean"):
+                    calc.clean()
+
+                del atoms
+                del calc
+
+
 
         timing_dict = {
             "cachedTime": cachedTime_runs,
@@ -527,6 +472,7 @@ def benchmark_one_alat_worker(
         })
 
 
+
 # =============================================================================
 # Parent-side subprocess runner
 # =============================================================================
@@ -630,12 +576,14 @@ def do_bench(model: str, species: list, alat_eq: float):
 
     print(f"\tscanning range {alat_range}")
 
-    ncells_per_side = 8
+    # ncells_per_side = 8
+    ncells_per_side = NCELLS_PER_SIDE
     pert_amp = 0.05
     pert_small = 1e-5
     average_iterations = 10
     zmax = 6.0
-    timeout_s = 120.0
+    # timeout_s = 120.0
+    timeout_s = TIMEOUT
 
     results = []
 
@@ -740,6 +688,8 @@ def do_bench(model: str, species: list, alat_eq: float):
 # Main
 # =============================================================================
 
+import fwc_nm
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input-module", required=True)
@@ -758,33 +708,37 @@ def main():
 
         print(f"MODEL : {model_shortname}")
 
-        mixed_alat_eq = find_equilibrium_fcc(model, species)
-        print(f"\tEQUIL_ALAT : {mixed_alat_eq}")
+        for spec in species:
+            print(f"\tSPEC : {spec}")
+            spec_work_config = fwc_nm.find_working_configuration_FCC(model=model,species=spec)
+            spec_good_alat = spec_work_config['good_alat']
+            if spec_good_alat > 0:
+                print(f"\tGOOD_ALAT : {spec_good_alat}")
 
-        model_bench = do_bench(model, species, mixed_alat_eq)
-        print(f"\tDONE BENCH {model}")
+                model_bench = do_bench(model, [spec], spec_good_alat)
+                print(f"\tDONE BENCH {model}")
 
-        lj_model = "LennardJones612_UniversalShifted__MO_959249795837_003"
-        lj_bench = do_bench(lj_model, species, mixed_alat_eq)
-        print("\tDONE BENCH LJ")
+                lj_model = "LennardJones612_UniversalShifted__MO_959249795837_003"
+                lj_bench = do_bench(lj_model, [spec], spec_good_alat)
+                print("\tDONE BENCH LJ")
 
-        plotdata = [
-            {
-                "model": model,
-                "model_bench": model_bench,
-            },
-            {
-                "model": lj_model,
-                "lj_bench": lj_bench,
-            },
-        ]
+                plotdata = [
+                    {
+                        "model": model,
+                        "model_bench": model_bench,
+                    },
+                    {
+                        "model": lj_model,
+                        "lj_bench": lj_bench,
+                    },
+                ]
 
-        out_path = output_dir / f"{model}_LJ_baseline_{'-'.join(species)}_fcc.json"
+                out_path = output_dir / f"{model}_LJ_baseline_{spec}_fcc.json"
 
-        with open(out_path, "w") as file:
-            json.dump(plotdata, file, indent=4)
+                with open(out_path, "w") as file:
+                    json.dump(plotdata, file, indent=4)
 
-        print(f"\tWROTE {out_path}")
+                print(f"\tWROTE {out_path}")
 
 
 if __name__ == "__main__":

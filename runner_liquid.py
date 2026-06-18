@@ -16,6 +16,9 @@ from ase.calculators.kim import KIM
 from ase.lattice.cubic import FaceCenteredCubic
 
 
+NCELLS_PER_SIDE = 1
+TIMEOUT = 600
+
 # =============================================================================
 # Timing helpers
 # =============================================================================
@@ -637,12 +640,14 @@ def do_bench(model: str, species: list, alat_eq: float):
 
     print(f"\tscanning range {alat_range}")
 
-    ncells_per_side = 8
+    # ncells_per_side = 8
+    ncells_per_side = NCELLS_PER_SIDE
     pert_amp = 0.05
     pert_small = 1e-5
     average_iterations = 10
     zmax = 6.0
-    timeout_s = 120.0
+    # timeout_s = 120.0
+    timeout_s = TIMEOUT
 
     results = []
 
@@ -747,6 +752,8 @@ def do_bench(model: str, species: list, alat_eq: float):
 # Main
 # =============================================================================
 
+import fwc_nm
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input-module", required=True)
@@ -765,33 +772,37 @@ def main():
 
         print(f"MODEL : {model_shortname}")
 
-        mixed_alat_eq = find_equilibrium_fcc(model, species)
-        print(f"\tEQUIL_ALAT : {mixed_alat_eq}")
+        for spec in species:
+            print(f"\tSPEC : {spec}")
+            spec_work_config = fwc_nm.find_working_configuration_FCC(model=model,species=spec)
+            spec_good_alat = spec_work_config['good_alat']
+            if spec_good_alat > 0:
+                print(f"\tGOOD_ALAT : {spec_good_alat}")
 
-        model_bench = do_bench(model, species, mixed_alat_eq)
-        print(f"\tDONE BENCH {model}")
+                model_bench = do_bench(model, [spec], spec_good_alat)
+                print(f"\tDONE BENCH {model}")
 
-        lj_model = "LennardJones612_UniversalShifted__MO_959249795837_003"
-        lj_bench = do_bench(lj_model, species, mixed_alat_eq)
-        print("\tDONE BENCH LJ")
+                lj_model = "LennardJones612_UniversalShifted__MO_959249795837_003"
+                lj_bench = do_bench(lj_model, [spec], spec_good_alat)
+                print("\tDONE BENCH LJ")
 
-        plotdata = [
-            {
-                "model": model,
-                "model_bench": model_bench,
-            },
-            {
-                "model": lj_model,
-                "lj_bench": lj_bench,
-            },
-        ]
+                plotdata = [
+                    {
+                        "model": model,
+                        "model_bench": model_bench,
+                    },
+                    {
+                        "model": lj_model,
+                        "lj_bench": lj_bench,
+                    },
+                ]
 
-        out_path = output_dir / f"{model}_LJ_baseline_{'-'.join(species)}_liquid.json"
+                out_path = output_dir / f"{model}_LJ_baseline_{spec}_fcc.json"
 
-        with open(out_path, "w") as file:
-            json.dump(plotdata, file, indent=4)
+                with open(out_path, "w") as file:
+                    json.dump(plotdata, file, indent=4)
 
-        print(f"\tWROTE {out_path}")
+                print(f"\tWROTE {out_path}")
 
 
 if __name__ == "__main__":
