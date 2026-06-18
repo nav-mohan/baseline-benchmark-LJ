@@ -1,87 +1,240 @@
+## SIM_LAMMPS_BUCKINGHAM
+### Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Np
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Np_fcc.png">
+
+### Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_O
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_O_fcc.png">
+
+### Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Pu
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Pu_fcc.png">
+
+### Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Th
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Th_fcc.png">
+
+### Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_U
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_U_fcc.png">
+
+### Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_Al
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_Al_fcc.png">
+
+### Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_Ca
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_Ca_fcc.png">
+
+### Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_O
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_O_fcc.png">
+
+### Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_Si
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_Si_fcc.png">
+
+### Sim_LAMMPS_Buckingham_MatsuiAkaogi_1991_TiO__SM_690504433912_000_LJ_baseline_O
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_MatsuiAkaogi_1991_TiO__SM_690504433912_000_LJ_baseline_O_fcc.png">
+
+### Sim_LAMMPS_Buckingham_MatsuiAkaogi_1991_TiO__SM_690504433912_000_LJ_baseline_Ti
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_MatsuiAkaogi_1991_TiO__SM_690504433912_000_LJ_baseline_Ti_fcc.png">
+
+### Sim_LAMMPS_Buckingham_SayleCatlowMaphanga_2005_MnO__SM_757974494010_000_LJ_baseline_Mn
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_SayleCatlowMaphanga_2005_MnO__SM_757974494010_000_LJ_baseline_Mn_fcc.png">
+
+### Sim_LAMMPS_Buckingham_SayleCatlowMaphanga_2005_MnO__SM_757974494010_000_LJ_baseline_O
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_SayleCatlowMaphanga_2005_MnO__SM_757974494010_000_LJ_baseline_O_fcc.png">
+
+### Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_AlO__SM_466046725502_000_LJ_baseline_Al
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_AlO__SM_466046725502_000_LJ_baseline_Al_fcc.png">
+
+### Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_AlO__SM_466046725502_000_LJ_baseline_O
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_AlO__SM_466046725502_000_LJ_baseline_O_fcc.png">
+
+### Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_MgO__SM_152356670345_000_LJ_baseline_Mg
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_MgO__SM_152356670345_000_LJ_baseline_Mg_fcc.png">
+
+### Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_MgO__SM_152356670345_000_LJ_baseline_O
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_MgO__SM_152356670345_000_LJ_baseline_O_fcc.png">
+
+### Sim_LAMMPS_Buckingham_WangShinShin_2019_CrO__SM_295921111679_000_LJ_baseline_Cr
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_WangShinShin_2019_CrO__SM_295921111679_000_LJ_baseline_Cr_fcc.png">
+
+### Sim_LAMMPS_Buckingham_WangShinShin_2019_CrO__SM_295921111679_000_LJ_baseline_O
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_WangShinShin_2019_CrO__SM_295921111679_000_LJ_baseline_O_fcc.png">
+
+## SIM_LAMMPS_REAXFF
+### Sim_LAMMPS_ReaxFF_BroqvistKullgrenWolf_2015_CeO__SM_063950220736_000_LJ_baseline_Ce-O
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_BroqvistKullgrenWolf_2015_CeO__SM_063950220736_000_LJ_baseline_Ce-O_fcc.png">
+
+### Sim_LAMMPS_ReaxFF_ChenowethVanDuinPersson_2008_CHOV__SM_429148913211_001_LJ_baseline_C-H-O-V
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_ChenowethVanDuinPersson_2008_CHOV__SM_429148913211_001_LJ_baseline_C-H-O-V_fcc.png">
+
+### Sim_LAMMPS_reaxFF_FthenakisPetsalakisTozzini_2022_CHON__SM_198543900691_000_LJ_baseline_C-H-O-N
+<img src = "plots_fcc/Sim_LAMMPS_reaxFF_FthenakisPetsalakisTozzini_2022_CHON__SM_198543900691_000_LJ_baseline_C-H-O-N_fcc.png">
+
+### Sim_LAMMPS_ReaxFF_IslamOstadhosseinBorodin_2015_LiS__SM_058492438145_000_LJ_baseline_Li-S
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_IslamOstadhosseinBorodin_2015_LiS__SM_058492438145_000_LJ_baseline_Li-S_fcc.png">
+
+### Sim_LAMMPS_ReaxFF_KeithFantauzziJacob_2010_AuO__SM_974345878378_001_LJ_baseline_Au-O
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_KeithFantauzziJacob_2010_AuO__SM_974345878378_001_LJ_baseline_Au-O_fcc.png">
+
+### Sim_LAMMPS_ReaxFF_SinghSrinivasanNeekAmal_2013_CFH__SM_306840588959_000_LJ_baseline_C-F-H
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_SinghSrinivasanNeekAmal_2013_CFH__SM_306840588959_000_LJ_baseline_C-F-H_fcc.png">
+
+
+## Other SIM_LAMMPS models
+### Sim_LAMMPS_ADP_PunDarlingKecskes_2015_CuTa__SM_399364650444_000_LJ_baseline_Cu-Ta_fcc.png
+<img src = "plots_fcc/Sim_LAMMPS_ADP_PunDarlingKecskes_2015_CuTa__SM_399364650444_000_LJ_baseline_Cu-Ta_fcc.png">
+
+### Sim_LAMMPS_ADP_SmirnovaStarikovVlasova_2018_MgH__SM_899925688973_000_LJ_baseline_Mg-H_fcc.png
+<img src = "plots_fcc/Sim_LAMMPS_ADP_SmirnovaStarikovVlasova_2018_MgH__SM_899925688973_000_LJ_baseline_Mg-H_fcc.png">
+
+### Sim_LAMMPS_ADP_StarikovSmirnovaPradhan_2021_Fe__SM_906654900816_000_LJ_baseline_Fe_fcc.png
+<img src = "plots_fcc/Sim_LAMMPS_ADP_StarikovSmirnovaPradhan_2021_Fe__SM_906654900816_000_LJ_baseline_Fe_fcc.png">
+
+### Sim_LAMMPS_AGNI_BotuBatraChapman_2017_Al__SM_666183636896_000_LJ_baseline_Al_fcc.png
+<img src = "plots_fcc/Sim_LAMMPS_AGNI_BotuBatraChapman_2017_Al__SM_666183636896_000_LJ_baseline_Al_fcc.png">
+
+### Sim_LAMMPS_AIREBO_LJ_StuartTuteinHarrison_2000_CH__SM_069621990420_000_LJ_baseline_C-H_fcc.png
+<img src = "plots_fcc/Sim_LAMMPS_AIREBO_LJ_StuartTuteinHarrison_2000_CH__SM_069621990420_000_LJ_baseline_C-H_fcc.png">
+
+### Sim_LAMMPS_AIREBO_Morse_OConnorAndzelmRobbins_2015_CH__SM_460187474631_000_LJ_baseline_C-H_fcc.png
+<img src = "plots_fcc/Sim_LAMMPS_AIREBO_Morse_OConnorAndzelmRobbins_2015_CH__SM_460187474631_000_LJ_baseline_C-H_fcc.png">
+
+### Sim_LAMMPS_BOP_WardZhouWong_2013_CdZnTe__SM_010061267051_000_LJ_baseline_Cd-Zn-Te_fcc.png
+<img src = "plots_fcc/Sim_LAMMPS_BOP_WardZhouWong_2013_CdZnTe__SM_010061267051_000_LJ_baseline_Cd-Zn-Te_fcc.png">
+
+### Sim_LAMMPS_BOP_ZhouFosterVanSwol_2014_CdTeSe__SM_567065323363_000_LJ_baseline_Cd-Te-Se_fcc.png
+<img src = "plots_fcc/Sim_LAMMPS_BOP_ZhouFosterVanSwol_2014_CdTeSe__SM_567065323363_000_LJ_baseline_Cd-Te-Se_fcc.png">
+
+### Sim_LAMMPS_BOP_ZhouWardFoster_2015_CuH__SM_404135993060_000_LJ_baseline_Cu-H_fcc.png
+<img src = "plots_fcc/Sim_LAMMPS_BOP_ZhouWardFoster_2015_CuH__SM_404135993060_000_LJ_baseline_Cu-H_fcc.png">
+
+
+
+## TORCHML MODELS
+### TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_C_fcc
+<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_C_fcc.png">
+
+### TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H_fcc
+<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H_fcc.png">
+
+### TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_N_fcc
+<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_N_fcc.png">
+
+### TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_O_fcc
+<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_O_fcc.png">
+
+### TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_S_fcc
+<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_S_fcc.png">
+
+### TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al_fcc
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al_fcc.png">
+
+### TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Co_fcc
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Co_fcc.png">
+
+### TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Cr_fcc
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Cr_fcc.png">
+
+### TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Fe_fcc
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Fe_fcc.png">
+
+### TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Mn_fcc
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Mn_fcc.png">
+
+### TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Ni_fcc
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Ni_fcc.png">
+
+### TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Si_fcc
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Si_fcc.png">
+
+### TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc
+<img src = "plots_fcc/TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc.png">
+
+
+
+
+## PORTABLE MODELS
+
 ### EAM_CubicNaturalSpline_ErcolessiAdams_1994_Al__MO_800509458712_003_LJ_baseline_Al
-<img src = "plots_fcc/EAM_CubicNaturalSpline_ErcolessiAdams_1994_Al__MO_800509458712_003_LJ_baseline_Al_fcc.png" width = "700px">
+<img src = "plots_fcc/EAM_CubicNaturalSpline_ErcolessiAdams_1994_Al__MO_800509458712_003_LJ_baseline_Al_fcc.png" >
 
 ### EAM_Dynamo_AcklandTichyVitek_1987v2_Ag__MO_055919219575_001_LJ_baseline_Ag
-<img src = "plots_fcc/EAM_Dynamo_AcklandTichyVitek_1987v2_Ag__MO_055919219575_001_LJ_baseline_Ag_fcc.png" width = "700px">
+<img src = "plots_fcc/EAM_Dynamo_AcklandTichyVitek_1987v2_Ag__MO_055919219575_001_LJ_baseline_Ag_fcc.png" >
 
 ### EAM_Dynamo_AlleraRibeiroPerez_2022_FeC__MO_324606345076_000_LJ_baseline_Fe-C
-<img src = "plots_fcc/EAM_Dynamo_AlleraRibeiroPerez_2022_FeC__MO_324606345076_000_LJ_baseline_Fe-C_fcc.png" width = "700px">
+<img src = "plots_fcc/EAM_Dynamo_AlleraRibeiroPerez_2022_FeC__MO_324606345076_000_LJ_baseline_Fe-C_fcc.png" >
 
 ### EAM_Dynamo_HaleWongZimmerman_2008PairHybrid_PdAgH__MO_104806802344_006_LJ_baseline_Pd-Ag-H
-<img src = "plots_fcc/EAM_Dynamo_HaleWongZimmerman_2008PairHybrid_PdAgH__MO_104806802344_006_LJ_baseline_Pd-Ag-H_fcc.png" width = "700px">
+<img src = "plots_fcc/EAM_Dynamo_HaleWongZimmerman_2008PairHybrid_PdAgH__MO_104806802344_006_LJ_baseline_Pd-Ag-H_fcc.png" >
 
 ### EAM_IMD_BrommerGaehler_2006A_AlNiCo__MO_122703700223_003_LJ_baseline_Al-Ni-Co
-<img src = "plots_fcc/EAM_IMD_BrommerGaehler_2006A_AlNiCo__MO_122703700223_003_LJ_baseline_Al-Ni-Co_fcc.png" width = "700px">
+<img src = "plots_fcc/EAM_IMD_BrommerGaehler_2006A_AlNiCo__MO_122703700223_003_LJ_baseline_Al-Ni-Co_fcc.png" >
 
 ### EAM_IMD_BrommerGaehlerMihalkovic_2007_CaCd__MO_145183423516_003_LJ_baseline_Ca-Cd
-<img src = "plots_fcc/EAM_IMD_BrommerGaehlerMihalkovic_2007_CaCd__MO_145183423516_003_LJ_baseline_Ca-Cd_fcc.png" width = "700px">
+<img src = "plots_fcc/EAM_IMD_BrommerGaehlerMihalkovic_2007_CaCd__MO_145183423516_003_LJ_baseline_Ca-Cd_fcc.png" >
 
 ### EAM_Magnetic2GQuintic_ChiesaDerletDudarev_2011_Fe__MO_140444321607_002_LJ_baseline_Fe
-<img src = "plots_fcc/EAM_Magnetic2GQuintic_ChiesaDerletDudarev_2011_Fe__MO_140444321607_002_LJ_baseline_Fe_fcc.png" width = "700px">
+<img src = "plots_fcc/EAM_Magnetic2GQuintic_ChiesaDerletDudarev_2011_Fe__MO_140444321607_002_LJ_baseline_Fe_fcc.png" >
 
 ### EAM_MagneticCubic_DerletNguyenDudarev_2007_V__MO_683890323730_002_LJ_baseline_V
-<img src = "plots_fcc/EAM_MagneticCubic_DerletNguyenDudarev_2007_V__MO_683890323730_002_LJ_baseline_V_fcc.png" width = "700px">
+<img src = "plots_fcc/EAM_MagneticCubic_DerletNguyenDudarev_2007_V__MO_683890323730_002_LJ_baseline_V_fcc.png" >
 
 ### EAM_MagneticCubic_MendelevHanSrolovitz_2003_Fe__MO_856295952425_002_LJ_baseline_Fe
-<img src = "plots_fcc/EAM_MagneticCubic_MendelevHanSrolovitz_2003_Fe__MO_856295952425_002_LJ_baseline_Fe_fcc.png" width = "700px">
+<img src = "plots_fcc/EAM_MagneticCubic_MendelevHanSrolovitz_2003_Fe__MO_856295952425_002_LJ_baseline_Fe_fcc.png" >
 
 ### EDIP_BelkoGusakovDorozhkin_2010_Ge__MO_129433059219_001_LJ_baseline_Ge
-<img src = "plots_fcc/EDIP_BelkoGusakovDorozhkin_2010_Ge__MO_129433059219_001_LJ_baseline_Ge_fcc.png" width = "700px">
+<img src = "plots_fcc/EDIP_BelkoGusakovDorozhkin_2010_Ge__MO_129433059219_001_LJ_baseline_Ge_fcc.png" >
 
 ### EMT_Asap_Standard_JacobsenStoltzeNorskov_1996_Ag__MO_303974873468_001_LJ_baseline_Ag
-<img src = "plots_fcc/EMT_Asap_Standard_JacobsenStoltzeNorskov_1996_Ag__MO_303974873468_001_LJ_baseline_Ag_fcc.png" width = "700px">
+<img src = "plots_fcc/EMT_Asap_Standard_JacobsenStoltzeNorskov_1996_Ag__MO_303974873468_001_LJ_baseline_Ag_fcc.png" >
 
 ### LJ_ElliottAkerson_2015_Universal__MO_959249795837_003_LJ_baseline_Si-C
-<img src = "plots_fcc/LJ_ElliottAkerson_2015_Universal__MO_959249795837_003_LJ_baseline_Si-C_fcc.png" width = "700px">
+<img src = "plots_fcc/LJ_ElliottAkerson_2015_Universal__MO_959249795837_003_LJ_baseline_Si-C_fcc.png" >
 
 ### LJ_Shifted_Bernardes_1958LowCutoff_Ar__MO_720819638419_004_LJ_baseline_Ar
-<img src = "plots_fcc/LJ_Shifted_Bernardes_1958LowCutoff_Ar__MO_720819638419_004_LJ_baseline_Ar_fcc.png" width = "700px">
+<img src = "plots_fcc/LJ_Shifted_Bernardes_1958LowCutoff_Ar__MO_720819638419_004_LJ_baseline_Ar_fcc.png" >
 
 ### LJ_Shifted_Bernardes_1958MedCutoff_Ar__MO_126566794224_004_LJ_baseline_Ar
-<img src = "plots_fcc/LJ_Shifted_Bernardes_1958MedCutoff_Ar__MO_126566794224_004_LJ_baseline_Ar_fcc.png" width = "700px">
+<img src = "plots_fcc/LJ_Shifted_Bernardes_1958MedCutoff_Ar__MO_126566794224_004_LJ_baseline_Ar_fcc.png" >
 
 ### LJ_Truncated_Nguyen_2005_Ar__MO_398194508715_001_LJ_baseline_Ar
-<img src = "plots_fcc/LJ_Truncated_Nguyen_2005_Ar__MO_398194508715_001_LJ_baseline_Ar_fcc.png" width = "700px">
+<img src = "plots_fcc/LJ_Truncated_Nguyen_2005_Ar__MO_398194508715_001_LJ_baseline_Ar_fcc.png" >
 
 ### MEAM_LAMMPS_HuangDongLiu_2018_Si__MO_050147023220_002_LJ_baseline_Si
-<img src = "plots_fcc/MEAM_LAMMPS_HuangDongLiu_2018_Si__MO_050147023220_002_LJ_baseline_Si_fcc.png" width = "700px">
+<img src = "plots_fcc/MEAM_LAMMPS_HuangDongLiu_2018_Si__MO_050147023220_002_LJ_baseline_Si_fcc.png" >
 
 ### MEAM_LAMMPS_KangEunJun_2014_SiC__MO_477506997611_002_LJ_baseline_Si-C
-<img src = "plots_fcc/MEAM_LAMMPS_KangEunJun_2014_SiC__MO_477506997611_002_LJ_baseline_Si-C_fcc.png" width = "700px">
+<img src = "plots_fcc/MEAM_LAMMPS_KangEunJun_2014_SiC__MO_477506997611_002_LJ_baseline_Si-C_fcc.png" >
 
 ### MEAM_LAMMPS_Lee_2007_Si__MO_774917820956_001_LJ_baseline_Si
-<img src = "plots_fcc/MEAM_LAMMPS_Lee_2007_Si__MO_774917820956_001_LJ_baseline_Si_fcc.png" width = "700px">
+<img src = "plots_fcc/MEAM_LAMMPS_Lee_2007_Si__MO_774917820956_001_LJ_baseline_Si_fcc.png" >
 
 ### MFF_MistriotisFlytzanisFarantos_1989_Si__MO_080526771943_001_LJ_baseline_Si
-<img src = "plots_fcc/MFF_MistriotisFlytzanisFarantos_1989_Si__MO_080526771943_001_LJ_baseline_Si_fcc.png" width = "700px">
+<img src = "plots_fcc/MFF_MistriotisFlytzanisFarantos_1989_Si__MO_080526771943_001_LJ_baseline_Si_fcc.png" >
 
 ### Morse_QuinticSmoothed_Jelinek_1972_Ar__MO_908645784389_002_LJ_baseline_Ar
-<img src = "plots_fcc/Morse_QuinticSmoothed_Jelinek_1972_Ar__MO_908645784389_002_LJ_baseline_Ar_fcc.png" width = "700px">
+<img src = "plots_fcc/Morse_QuinticSmoothed_Jelinek_1972_Ar__MO_908645784389_002_LJ_baseline_Ar_fcc.png" >
 
 ### Morse_Shifted_GirifalcoWeizer_1959HighCutoff_Ag__MO_111986436268_004_LJ_baseline_Ag
-<img src = "plots_fcc/Morse_Shifted_GirifalcoWeizer_1959HighCutoff_Ag__MO_111986436268_004_LJ_baseline_Ag_fcc.png" width = "700px">
+<img src = "plots_fcc/Morse_Shifted_GirifalcoWeizer_1959HighCutoff_Ag__MO_111986436268_004_LJ_baseline_Ag_fcc.png" >
 
 ### Morse_Shifted_GirifalcoWeizer_1959HighCutoff_Fe__MO_147603128437_004_LJ_baseline_Fe
-<img src = "plots_fcc/Morse_Shifted_GirifalcoWeizer_1959HighCutoff_Fe__MO_147603128437_004_LJ_baseline_Fe_fcc.png" width = "700px">
+<img src = "plots_fcc/Morse_Shifted_GirifalcoWeizer_1959HighCutoff_Fe__MO_147603128437_004_LJ_baseline_Fe_fcc.png" >
 
 ### Morse_Shifted_GirifalcoWeizer_1959LowCutoff_Ag__MO_137719994600_004_LJ_baseline_Ag
-<img src = "plots_fcc/Morse_Shifted_GirifalcoWeizer_1959LowCutoff_Ag__MO_137719994600_004_LJ_baseline_Ag_fcc.png" width = "700px">
+<img src = "plots_fcc/Morse_Shifted_GirifalcoWeizer_1959LowCutoff_Ag__MO_137719994600_004_LJ_baseline_Ag_fcc.png" >
 
 ### Morse_Shifted_GirifalcoWeizer_1959MedCutoff_Ag__MO_861893969202_004_LJ_baseline_Ag
-<img src = "plots_fcc/Morse_Shifted_GirifalcoWeizer_1959MedCutoff_Ag__MO_861893969202_004_LJ_baseline_Ag_fcc.png" width = "700px">
+<img src = "plots_fcc/Morse_Shifted_GirifalcoWeizer_1959MedCutoff_Ag__MO_861893969202_004_LJ_baseline_Ag_fcc.png" >
 
 ### Morse_Shifted_Jelinek_1972_Ar__MO_831902330215_004_LJ_baseline_Ar
-<img src = "plots_fcc/Morse_Shifted_Jelinek_1972_Ar__MO_831902330215_004_LJ_baseline_Ar_fcc.png" width = "700px">
+<img src = "plots_fcc/Morse_Shifted_Jelinek_1972_Ar__MO_831902330215_004_LJ_baseline_Ar_fcc.png" >
 
 ### SNAP_LiChenZheng_2019_NbTaWMo__MO_560387080449_000_LJ_baseline_Nb-Ta-W-Mo
-<img src = "plots_fcc/SNAP_LiChenZheng_2019_NbTaWMo__MO_560387080449_000_LJ_baseline_Nb-Ta-W-Mo_fcc.png" width = "700px">
+<img src = "plots_fcc/SNAP_LiChenZheng_2019_NbTaWMo__MO_560387080449_000_LJ_baseline_Nb-Ta-W-Mo_fcc.png" >
 
 ### SW_LeeHwang_2012GGA_Si__MO_040570764911_001_LJ_baseline_Si
-<img src = "plots_fcc/SW_LeeHwang_2012GGA_Si__MO_040570764911_001_LJ_baseline_Si_fcc.png" width = "700px">
+<img src = "plots_fcc/SW_LeeHwang_2012GGA_Si__MO_040570764911_001_LJ_baseline_Si_fcc.png" >
 
 ### SW_StillingerWeber_1985_Si__MO_405512056662_006_LJ_baseline_Si
-<img src = "plots_fcc/SW_StillingerWeber_1985_Si__MO_405512056662_006_LJ_baseline_Si_fcc.png" width = "700px">
+<img src = "plots_fcc/SW_StillingerWeber_1985_Si__MO_405512056662_006_LJ_baseline_Si_fcc.png" >
 
 ### SW_WangStroudMarkworth_1989_CdTe__MO_786496821446_001_LJ_baseline_Cd-Te
-<img src = "plots_fcc/SW_WangStroudMarkworth_1989_CdTe__MO_786496821446_001_LJ_baseline_Cd-Te_fcc.png" width = "700px">
+<img src = "plots_fcc/SW_WangStroudMarkworth_1989_CdTe__MO_786496821446_001_LJ_baseline_Cd-Te_fcc.png" >
 
