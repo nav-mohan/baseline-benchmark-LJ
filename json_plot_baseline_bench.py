@@ -9,11 +9,11 @@ import matplotlib.pyplot as plt
 # User settings
 # ---------------------------------------------------------------------
 
-json_dir = Path("./liquid")
-output_dir = Path("./plots_liquid")
+#json_dir = Path("./liquid")
+#output_dir = Path("./plots_liquid")
 
-#json_dir = Path("./fcc")
-#output_dir = Path("./plots_fcc")
+json_dir = Path("./fcc")
+output_dir = Path("./plots_fcc")
 
 file_pattern = "*.json"
 

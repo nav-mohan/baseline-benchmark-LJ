@@ -1,30 +1,32 @@
 input_data = [
-# TORCHML MODELS
-    # {
-    #     "species" : ["H"],
-    #     "model": "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
-    #     "model_shortname" : "ALLEGRO"
-    # },
-    # {
-    #     "species" : ["C"],
-    #     "model": "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
-    #     "model_shortname" : "ALLEGRO"
-    # },
-    # {
-    #     "species" : ["N"],
-    #     "model": "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
-    #     "model_shortname" : "ALLEGRO"
-    # },
-    # {
-    #     "species" : ["O"],
-    #     "model": "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
-    #     "model_shortname" : "ALLEGRO"
-    # },
-    # {
-    #     "species" : ["S"],
-    #     "model": "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
-    #     "model_shortname" : "ALLEGRO"
-    # },
+    {
+        "species" : ["H"],
+        "model" : "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
+        "model_shortname" : "Allegro"
+    },
+    {
+        "species" : ["C"],
+        "model" : "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
+        "model_shortname" : "Allegro"
+    },
+    {
+        "species" : ["N"],
+        "model" : "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
+        "model_shortname" : "Allegro"
+    },
+    {
+        "species" : ["O"],
+        "model" : "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
+        "model_shortname" : "Allegro"
+    },
+    {
+        "species" : ["S"],
+        "model" : "TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000",
+        "model_shortname" : "Allegro"
+    },
+
+
+
 
     {
         "species" : ["Si"],
