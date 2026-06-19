@@ -1,37 +1,11 @@
-buckinghma doesnt segfdault if monospecies 
+buckinghma doesnt segfdault for monospecies-fcc but it segfaults for mixed-fcc  
 torchml is segfaulting bceause ncells_per_side = 8 and cutoff = 12A (so it's OOMing and segfaulintg)
-the FWC runs were done with ncells_per_side = 1
+the FWC runs were done with ncells_per_side = 1 so thats why FWC didnt segfault for torchml models
 
 Only considering FCC here 
 Buckingham and Torch models are problematic 
 i might have to redo all of my results because my FWC is for monospecies but my benchamrk is for multispecies 
 this was the problem with buckingham. it crashed because i was doing multispecies-fcc and not monospecies-fcc
-
-	Buckingham_SunStirnerHagston Al-O 
-		segfaulted for every alat outside of [3.9,4.3] weird. 
-	
-	NEQUIP 
-		it's good_alat at 2.26. 
-		it runs fine for [2.7,4.5] 
-		it's timing (120seconds) out for alats below 2.6 which is density above 0.6. 
-		so, i have to give it more time. 
-
-	i think torchml-models are not exactly reproducible. 
-	there's some element of randomness. 
-	i think some of those energ-alat curves were different for each run. 
-	
-	MACE-Ni 
-	MACE-Fe
-	MACE-Co
-		it has a good_alat of 3.5
-		OOMed or segfaulted for all alats! 
-
-	Allegro-H
-		it has a good alat of 4.5 
-		but it OOMs or Segfaults for all alats!
-		Allegro ran FWC without problems so why does it segfault for Benchmakr? it's literlaly the same subprocessing logic. 
-		and i'm running it on individial species. i'm not making a mixed-species FCC. only a monospecies-FCC in baseline
-
 
 step-discontinuity in FCC usually gets smoothed as quadratic curve in LIQUID
 why do we use FCC as a default structure? 
