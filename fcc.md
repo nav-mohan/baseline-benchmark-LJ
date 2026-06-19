@@ -107,6 +107,8 @@
 
 
 ## TORCHML MODELS
+- I did not plot the `large-perturb` because it's runtime was much larger than `init-time` and `small-perturb` making it hard to see those two curves. 
+
 ### TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_C_fcc
 <img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_C_fcc.png">
 
