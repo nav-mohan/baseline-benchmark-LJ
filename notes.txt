@@ -1,11 +1,20 @@
-buckinghma doesnt segfdault for monospecies-fcc but it segfaults for mixed-fcc  
-torchml is segfaulting bceause ncells_per_side = 8 and cutoff = 12A (so it's OOMing and segfaulintg)
-the FWC runs were done with ncells_per_side = 1 so thats why FWC didnt segfault for torchml models
+to dos:
+	just give MACE one last try with 2x2x2 for mixed-species FCC with Al-Ni-Co-Fe-Cr-Mn (HEA) on GPU. does it OOM/segfault? 
+	test CPU only run of Allegro with mixed-species FCC. does it OOM/segfault? use ncells = 2 -- this will take a very long time
+
+reminders:
+	clean() the cacl
+	start out with doing mixed-species. if they dont produce enough data-points then do monospecies. this will happen for Allegro-HCNOS. 
+	for universal models we need a couple of "standard" configurations such as metals, nonmetals metalloids ionic covalent etc 
+	buckingham segfaults if you dont clean() the calculator
+	torchml is segfaulting bceause ncells_per_side = 8 and cutoff = 12A (so it's OOMing and segfaulintg)
+	torchml can only be done for monospecies because it can only be done for ncells=1
+	the FWC runs were done with ncells_per_side = 1 so thats why FWC didnt segfault for torchml models
+
+
 
 Only considering FCC here 
 Buckingham and Torch models are problematic 
-i might have to redo all of my results because my FWC is for monospecies but my benchamrk is for multispecies 
-this was the problem with buckingham. it crashed because i was doing multispecies-fcc and not monospecies-fcc
 
 step-discontinuity in FCC usually gets smoothed as quadratic curve in LIQUID
 why do we use FCC as a default structure? 
