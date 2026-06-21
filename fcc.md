@@ -1,36 +1,135 @@
-# 2x2x2 mixed-species 
+# `2x2x2 mixed` configuration for `TorchML` models
 
 ## TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H-C-N-O-S_fcc_2x2x2
 
 ### CPU
-<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H-C-N-O-S_fcc_cpu_2x2x2.png" width = "700">
+<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H-C-N-O-S_fcc_cpu_2x2x2.png">
 
 ### CUDA 
-<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H-C-N-O-S_fcc_cuda_2x2x2.png" width = "700">
+<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H-C-N-O-S_fcc_cuda_2x2x2.png">
 
 
 ## TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al-Ni-Co-Fe-Cr-Mn_fcc_2x2x2
 
 ### CPU 
-<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al-Ni-Co-Fe-Cr-Mn_fcc_cpu_2x2x2.png" width = "700">
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al-Ni-Co-Fe-Cr-Mn_fcc_cpu_2x2x2.png">
 
 ### CUDA
-<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al-Ni-Co-Fe-Cr-Mn_fcc_cuda_2x2x2.png" width = "700">
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al-Ni-Co-Fe-Cr-Mn_fcc_cuda_2x2x2.png">
 
 
 ## TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc_2x2x2
 
 ### CPU 
 
-<img src = "plots_fcc/TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc_cpu_2x2x2.png" width = "700">
+<img src = "plots_fcc/TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc_cpu_2x2x2.png">
 
 ### CUDA
 
-<img src = "plots_fcc/TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc_cuda_2x2x2.png" width = "700">
+<img src = "plots_fcc/TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc_cuda_2x2x2.png">
 
 
 
+# `2x2x2 mixed` configuration for `Sim Buckingham` models
 
+## Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Pu-U-Th-Np-O_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Pu-U-Th-Np-O_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_Si-Ca-O-Al_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_FreitasSantosColaco_2015_SiCaOAl__SM_154093256665_000_LJ_baseline_Si-Ca-O-Al_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_Buckingham_MatsuiAkaogi_1991_TiO__SM_690504433912_000_LJ_baseline_Ti-O_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_MatsuiAkaogi_1991_TiO__SM_690504433912_000_LJ_baseline_Ti-O_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_Buckingham_SayleCatlowMaphanga_2005_MnO__SM_757974494010_000_LJ_baseline_Mn-O_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_SayleCatlowMaphanga_2005_MnO__SM_757974494010_000_LJ_baseline_Mn-O_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_AlO__SM_466046725502_000_LJ_baseline_Al-O_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_AlO__SM_466046725502_000_LJ_baseline_Al-O_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_MgO__SM_152356670345_000_LJ_baseline_Mg-O_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_SunStirnerHagston_2006_MgO__SM_152356670345_000_LJ_baseline_Mg-O_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_Buckingham_WangShinShin_2019_CrO__SM_295921111679_000_LJ_baseline_Cr-O_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_Buckingham_WangShinShin_2019_CrO__SM_295921111679_000_LJ_baseline_Cr-O_fcc_cpu_2x2x2.png">
+
+
+# `2x2x2 mixed` configuration for `Sim ReaxFF` models
+
+## Sim_LAMMPS_ReaxFF_BroqvistKullgrenWolf_2015_CeO__SM_063950220736_000_LJ_baseline_Ce-O_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_BroqvistKullgrenWolf_2015_CeO__SM_063950220736_000_LJ_baseline_Ce-O_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_ReaxFF_ChenowethVanDuinPersson_2008_CHOV__SM_429148913211_001_LJ_baseline_C-H-O-V_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_ChenowethVanDuinPersson_2008_CHOV__SM_429148913211_001_LJ_baseline_C-H-O-V_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_reaxFF_FthenakisPetsalakisTozzini_2022_CHON__SM_198543900691_000_LJ_baseline_C-H-O-N_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_reaxFF_FthenakisPetsalakisTozzini_2022_CHON__SM_198543900691_000_LJ_baseline_C-H-O-N_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_ReaxFF_IslamOstadhosseinBorodin_2015_LiS__SM_058492438145_000_LJ_baseline_Li-S_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_IslamOstadhosseinBorodin_2015_LiS__SM_058492438145_000_LJ_baseline_Li-S_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_ReaxFF_KeithFantauzziJacob_2010_AuO__SM_974345878378_001_LJ_baseline_Au-O_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_KeithFantauzziJacob_2010_AuO__SM_974345878378_001_LJ_baseline_Au-O_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_ReaxFF_SinghSrinivasanNeekAmal_2013_CFH__SM_306840588959_000_LJ_baseline_C-F-H_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_ReaxFF_SinghSrinivasanNeekAmal_2013_CFH__SM_306840588959_000_LJ_baseline_C-F-H_fcc_cpu_2x2x2.png">
+
+
+# Other SIM Models 
+
+## Sim_LAMMPS_ADP_PunDarlingKecskes_2015_CuTa__SM_399364650444_000_LJ_baseline_Cu-Ta_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_ADP_PunDarlingKecskes_2015_CuTa__SM_399364650444_000_LJ_baseline_Cu-Ta_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_ADP_SmirnovaStarikovVlasova_2018_MgH__SM_899925688973_000_LJ_baseline_Mg-H_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_ADP_SmirnovaStarikovVlasova_2018_MgH__SM_899925688973_000_LJ_baseline_Mg-H_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_ADP_StarikovSmirnovaPradhan_2021_Fe__SM_906654900816_000_LJ_baseline_Fe_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_ADP_StarikovSmirnovaPradhan_2021_Fe__SM_906654900816_000_LJ_baseline_Fe_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_AIREBO_LJ_StuartTuteinHarrison_2000_CH__SM_069621990420_000_LJ_baseline_C-H_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_AIREBO_LJ_StuartTuteinHarrison_2000_CH__SM_069621990420_000_LJ_baseline_C-H_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_AIREBO_Morse_OConnorAndzelmRobbins_2015_CH__SM_460187474631_000_LJ_baseline_C-H_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_AIREBO_Morse_OConnorAndzelmRobbins_2015_CH__SM_460187474631_000_LJ_baseline_C-H_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_BOP_WardZhouWong_2013_CdZnTe__SM_010061267051_000_LJ_baseline_Cd-Zn-Te_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_BOP_WardZhouWong_2013_CdZnTe__SM_010061267051_000_LJ_baseline_Cd-Zn-Te_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_BOP_ZhouFosterVanSwol_2014_CdTeSe__SM_567065323363_000_LJ_baseline_Cd-Te-Se_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_BOP_ZhouFosterVanSwol_2014_CdTeSe__SM_567065323363_000_LJ_baseline_Cd-Te-Se_fcc_cpu_2x2x2.png">
+
+## Sim_LAMMPS_BOP_ZhouWardFoster_2015_CuH__SM_404135993060_000_LJ_baseline_Cu-H_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Sim_LAMMPS_BOP_ZhouWardFoster_2015_CuH__SM_404135993060_000_LJ_baseline_Cu-H_fcc_cpu_2x2x2.png">
+
+
+## Tersoff_LAMMPS_AlbeNordlundNord_2002_GaAs__MO_799020228312_004_LJ_baseline_Ga-As_fcc_cpu_2x2x2
+
+<img src = "plots_fcc/Tersoff_LAMMPS_AlbeNordlundNord_2002_GaAs__MO_799020228312_004_LJ_baseline_Ga-As_fcc_cpu_2x2x2.png">
+
+
+
+# These are results for 1x1x1 mono-species FCC  
 
 ## SIM_LAMMPS_BUCKINGHAM
 ### Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Np
