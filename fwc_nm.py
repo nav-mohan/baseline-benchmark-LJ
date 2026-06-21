@@ -16,7 +16,7 @@ from ase.lattice.cubic import FaceCenteredCubic
 import kimpy
 
 
-NCELLS_PER_SIDE = 1
+FWC_NCELLS_PER_SIDE = 1
 
 
 def _energy_worker(model_name: str, species: str, alat: float, queue):
@@ -142,7 +142,7 @@ def generate_fcc_compute_energy(
     supercell size. Returns None if the model fails to compute the energy.
     """
 
-    ncells_per_side = NCELLS_PER_SIDE
+    ncells_per_side = FWC_NCELLS_PER_SIDE
     atoms = FaceCenteredCubic(
         size=(ncells_per_side, ncells_per_side, ncells_per_side),
         latticeconstant=alat,
@@ -321,7 +321,7 @@ def filter_good_alat(
     return {
         "good_alat": valid_alats[min_index],
         "min_led": valid_leds[min_index],
-        "good_ncells": NCELLS_PER_SIDE,
+        "good_ncells": FWC_NCELLS_PER_SIDE,
         "valid_alats": valid_alats,
         "valid_energy_per_atom": valid_energy_per_atom,
         "indices": indices,
@@ -1031,7 +1031,7 @@ def _edge_detection_fallback_from_starting_points(
         "good_energy_per_atom": best["energy_per_atom"],
         "good_curvature": best["curvature"],
         "min_led": 0.0,
-        "good_ncells": NCELLS_PER_SIDE,
+        "good_ncells": FWC_NCELLS_PER_SIDE,
         "valid_alats": [row["alat"] for row in accepted_candidates],
         "valid_energy_per_atom": [
             row["energy_per_atom"] for row in accepted_candidates

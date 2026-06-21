@@ -1,10 +1,19 @@
 to dos:
-	just give MACE one last try with 2x2x2 for mixed-species FCC with Al-Ni-Co-Fe-Cr-Mn (HEA) on GPU. does it OOM/segfault? 
-	test CPU only run of Allegro with mixed-species FCC. does it OOM/segfault? use ncells = 2 -- this will take a very long time
+	test out all 3 ML models with 2x2x2 mixed-species on CPU and GPU  
+		* Allegro 	CPU 	ncells = 2x2x2			mixed-species HCNOS 					* SUCCESS. results look amenable for linear-interpolation
+		* Allegro 	GPU 	ncells = 2x2x2			mixed-species HCNOS						* SUCCESS. results look amenable for linear-interpolation
+		* MACE 		GPU 	ncells = 2x2x2			mixed-species Al-Ni-Co-Fe-Cr-Mn 		* SUCCESS. results look amenable for linear-interpolation
+		* MACE 		CPU 	ncells = 2x2x2			mixed-species Al-Ni-Co-Fe-Cr-Mn 		* SUCCESS. results look amenable for linear-interpolation
+		* NeQuip	CPU 	ncells = 2x2x2			mono-species Si 						* SUCCESS. results look amenable for linear-interpolation
+		* NeQuip	GPU 	ncells = 2x2x2			mono-species Si 						* SUCCESS. results look amenable for linear-interpolation
+	rerun the SIM models as well just for good measure with 2x2x2 mixed-species
+	the energy-alat curve for 2x2x2 lattice is also smoother than 1x1x1. 
 
 reminders:
-	clean() the cacl
-	start out with doing mixed-species. if they dont produce enough data-points then do monospecies. this will happen for Allegro-HCNOS. 
+	if the find-equil-config works for 2x2x2 then there might be huge API differences to FWC. 
+		MAIN THING - you wont have to do averaging of equil_alat. FWC will already give you an equilibrated mixed-species 2x2x2 lattice-constant and you directly bench that. Othewise, i'm hoping there wont be major differences to the physical results itself. if it runs good for average-monospec then it should also run good for equilibrated-mixed.  
+	clean() the cacl especially important for SIM models. 
+	start out with doing mixed-species. if they dont produce enough data-points then do monospecies. 
 	for universal models we need a couple of "standard" configurations such as metals, nonmetals metalloids ionic covalent etc 
 	buckingham segfaults if you dont clean() the calculator
 	torchml is segfaulting bceause ncells_per_side = 8 and cutoff = 12A (so it's OOMing and segfaulintg)

@@ -7,6 +7,7 @@ import signal
 import time
 import traceback
 from pathlib import Path
+import os
 
 import numpy as np
 import scipy.optimize
@@ -16,8 +17,11 @@ from ase.calculators.kim import KIM
 from ase.lattice.cubic import FaceCenteredCubic
 
 
-NCELLS_PER_SIDE = 1
+BENCH_NCELLS_PER_SIDE = 2
 TIMEOUT = 600
+
+DEVICE = os.getenv("KIM_MODEL_EXECUTION_DEVICE","cpu")
+
 
 # =============================================================================
 # Small timing helpers
@@ -202,12 +206,6 @@ def mean_std_filtered(values, keep_mask):
     return avg, std
 
 
-# =============================================================================
-# FCC / equilibrium helpers
-# =============================================================================
-
-
-
 
 def generate_alat_range(alat_eq, min_frac=0.75, max_frac=2.0, num_alats=50):
     t = np.linspace(0, 1, num_alats)
@@ -233,7 +231,8 @@ def make_fcc_template(ncells_per_side, species):
             ncells_per_side += 1
         else:
             break
-
+    
+    print(f"\t\t#atoms = {len(atoms)},ncells = {ncells_per_side}, species = {species}")
     return atoms, ncells_per_side
 
 
@@ -347,8 +346,6 @@ def benchmark_one_alat_worker(
 
                 del atoms
                 del calc
-
-
 
         timing_dict = {
             "cachedTime": cachedTime_runs,
@@ -577,7 +574,7 @@ def do_bench(model: str, species: list, alat_eq: float):
     print(f"\tscanning range {alat_range}")
 
     # ncells_per_side = 8
-    ncells_per_side = NCELLS_PER_SIDE
+    ncells_per_side = BENCH_NCELLS_PER_SIDE
     pert_amp = 0.05
     pert_small = 1e-5
     average_iterations = 10
@@ -708,6 +705,7 @@ def main():
 
         print(f"MODEL : {model_shortname}")
 
+        """ benching monospecies ncells=1 (this works, confirmed)
         for spec in species:
             print(f"\tSPEC : {spec}")
             spec_work_config = fwc_nm.find_working_configuration_FCC(model=model,species=spec)
@@ -739,6 +737,58 @@ def main():
                     json.dump(plotdata, file, indent=4)
 
                 print(f"\tWROTE {out_path}")
+        """
+
+
+        """
+        ATTEMPT: benching mixed-species with ncells = 2 (this works for some models but not Torch)
+        """
+        # find average of good alats 
+        species_good_alats = []
+        for spec in species:
+            print(f"\tSPEC : {spec}")
+            spec_work_config = fwc_nm.find_working_configuration_FCC(model=model,species=spec)
+            spec_good_alat = spec_work_config['good_alat']
+            if spec_good_alat > 0:
+                print(f"\tGOOD_ALAT : {spec_good_alat}")
+                species_good_alats.append(spec_good_alat)
+
+        if len(species_good_alats) == 0: 
+            print(f"Failed to find a single good alat for model {model}")
+            print(f"Exiting because unable to find good configuration for model")
+            exit()
+
+        avg_good_alat = np.mean(species_good_alats)
+
+        print(f"\tSPECIES : {species}")
+        print(f"\tMEAN_ALAT: {avg_good_alat}")
+
+        model_bench = do_bench(model, species, avg_good_alat)
+        print(f"\tDONE BENCH {model}")
+
+        lj_model = "LennardJones612_UniversalShifted__MO_959249795837_003"
+        lj_bench = do_bench(lj_model, species, avg_good_alat)
+        print("\tDONE BENCH LJ")
+
+        plotdata = [
+            {
+                "model": model,
+                "model_bench": model_bench,
+            },
+            {
+                "model": lj_model,
+                "lj_bench": lj_bench,
+            },
+        ]
+
+        filename_suffix = f"fcc_{DEVICE}_{BENCH_NCELLS_PER_SIDE}x{BENCH_NCELLS_PER_SIDE}x{BENCH_NCELLS_PER_SIDE}"
+
+        out_path = output_dir / f"{model}_LJ_baseline_{'-'.join(species)}_{filename_suffix}.json"
+
+        with open(out_path, "w") as file:
+            json.dump(plotdata, file, indent=4)
+
+        print(f"\tWROTE {out_path}")
 
 
 if __name__ == "__main__":

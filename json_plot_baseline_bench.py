@@ -26,7 +26,7 @@ FIT_DENSITY_MIN = 0.5
 FIT_DENSITY_MAX = 2.0
 
 SAVE_MAIN_PLOTS = True
-SAVE_RATIO_PLOTS = True
+SAVE_RATIO_PLOTS = False
 
 SHOW_PLOTS = False
 
@@ -261,125 +261,41 @@ def plot_single_benchmark(ax_energy, title, arrays):
     ax_time = ax_energy.twinx()
 
     # Energy curve
-    energy_line, = ax_energy.plot(
-        density,
-        energy,
-        "o-",
-        color=ENERGY_COLOR,
-        label="Energy",
-        markersize=4,
-    )
+    energy_line, = ax_energy.plot(density,energy,"o-",color=ENERGY_COLOR,label="Energy",markersize=4,)
 
     # Timing curves
-    init_line = ax_time.errorbar(
-        density,
-        init_time,
-        yerr=stderr_init,
-        fmt="s-",
-        color=INIT_COLOR,
-        label="Init time",
-        markersize=4,
-        capsize=3,
-    )
+    init_line = ax_time.errorbar(density,init_time,yerr=stderr_init,fmt="s-",color=INIT_COLOR,label="Init time",markersize=4,capsize=3,)
 
-    cached_line = ax_time.errorbar(
-        density,
-        cached_time,
-        yerr=stderr_cached,
-        fmt=".-",
-        color=CACHED_COLOR,
-        label="Cached time",
-        markersize=3,
-        capsize=2,
-        alpha=0.65,
-    )
+    cached_line = ax_time.errorbar(density,cached_time,yerr=stderr_cached,fmt=".-",color=CACHED_COLOR,label="Cached time",markersize=3,capsize=2,alpha=0.65,)
 
-    tiny_line = ax_time.errorbar(
-        density,
-        tiny_time,
-        yerr=stderr_tiny,
-        fmt="^-",
-        color=TINY_COLOR,
-        label="Tiny move time",
-        markersize=4,
-        capsize=3,
-    )
+    tiny_line = ax_time.errorbar(density,tiny_time,yerr=stderr_tiny,fmt="^-",color=TINY_COLOR,label="Tiny move time",markersize=4,capsize=3,)
 
-    large_line = ax_time.errorbar(
-        density,
-        large_time,
-        yerr=stderr_large,
-        fmt="v-",
-        color=LARGE_COLOR,
-        label="Large move time",
-        markersize=4,
-        capsize=3,
-    )
+    # large_line = ax_time.errorbar(density,large_time,yerr=stderr_large,fmt="v-",color=LARGE_COLOR,label="Large move time",markersize=4,capsize=3,)
 
     # Linear fits in selected density window
-    init_fit = linear_fit_in_density_window(
-        density,
-        init_time,
-        rho_min=FIT_DENSITY_MIN,
-        rho_max=FIT_DENSITY_MAX,
-    )
+    init_fit = linear_fit_in_density_window(density,init_time,rho_min=FIT_DENSITY_MIN,rho_max=FIT_DENSITY_MAX,)
 
-    tiny_fit = linear_fit_in_density_window(
-        density,
-        tiny_time,
-        rho_min=FIT_DENSITY_MIN,
-        rho_max=FIT_DENSITY_MAX,
-    )
+    tiny_fit = linear_fit_in_density_window(density,tiny_time,rho_min=FIT_DENSITY_MIN,rho_max=FIT_DENSITY_MAX,)
 
-    large_fit = linear_fit_in_density_window(
-        density,
-        large_time,
-        rho_min=FIT_DENSITY_MIN,
-        rho_max=FIT_DENSITY_MAX,
-    )
+    large_fit = None
+    # large_fit = linear_fit_in_density_window(density,large_time,rho_min=FIT_DENSITY_MIN,rho_max=FIT_DENSITY_MAX,)
 
     fit_lines = []
 
     if init_fit is not None:
-        init_fit_line, = ax_time.plot(
-            init_fit["x_line"],
-            init_fit["y_line"],
-            "--",
-            color=INIT_FIT_COLOR,
-            linewidth=2,
-            label=f"Init fit: slope={init_fit['slope']:.3g}",
-        )
+        init_fit_line, = ax_time.plot(init_fit["x_line"],init_fit["y_line"],"--",color=INIT_FIT_COLOR,linewidth=2,label=f"Init fit: slope={init_fit['slope']:.3g}",)
         fit_lines.append(init_fit_line)
 
     if tiny_fit is not None:
-        tiny_fit_line, = ax_time.plot(
-            tiny_fit["x_line"],
-            tiny_fit["y_line"],
-            "--",
-            color=TINY_FIT_COLOR,
-            linewidth=2,
-            label=f"Tiny fit: slope={tiny_fit['slope']:.3g}",
-        )
+        tiny_fit_line, = ax_time.plot(tiny_fit["x_line"],tiny_fit["y_line"],"--",color=TINY_FIT_COLOR,linewidth=2,label=f"Tiny fit: slope={tiny_fit['slope']:.3g}",)
         fit_lines.append(tiny_fit_line)
 
-    if large_fit is not None:
-        large_fit_line, = ax_time.plot(
-            large_fit["x_line"],
-            large_fit["y_line"],
-            "--",
-            color=LARGE_FIT_COLOR,
-            linewidth=2,
-            label=f"Large fit: slope={large_fit['slope']:.3g}",
-        )
-        fit_lines.append(large_fit_line)
+    # if large_fit is not None:
+        # large_fit_line, = ax_time.plot(large_fit["x_line"],large_fit["y_line"],"--",color=LARGE_FIT_COLOR,linewidth=2,label=f"Large fit: slope={large_fit['slope']:.3g}",)
+        # fit_lines.append(large_fit_line)
 
     # Mark fit window
-    ax_energy.axvspan(
-        FIT_DENSITY_MIN,
-        FIT_DENSITY_MAX,
-        alpha=0.08,
-        label="Fit density window",
-    )
+    ax_energy.axvspan(FIT_DENSITY_MIN,FIT_DENSITY_MAX,alpha=0.08,label="Fit density window",)
 
     ax_energy.set_title(title)
     ax_energy.set_xlabel("Relative density")
@@ -395,7 +311,7 @@ def plot_single_benchmark(ax_energy, title, arrays):
         init_line,
         cached_line,
         tiny_line,
-        large_line,
+        # large_line,
     ] + fit_lines
 
     labels = [
@@ -403,7 +319,7 @@ def plot_single_benchmark(ax_energy, title, arrays):
         "Init time",
         "Cached time",
         "Tiny move time",
-        "Large move time",
+        # "Large move time",
     ] + [line.get_label() for line in fit_lines]
 
     ax_energy.legend(lines, labels, loc="best", fontsize=7)
@@ -424,24 +340,11 @@ def plot_benchmark_file(json_path):
     model_arrays = extract_arrays(model_entry["model_bench"])
     lj_arrays = extract_arrays(lj_entry["lj_bench"])
 
-    fig, axes = plt.subplots(
-        nrows=1,
-        ncols=2,
-        figsize=(22, 6),
-        sharex=False,
-    )
+    fig, axes = plt.subplots(nrows=1,ncols=2,figsize=(22, 6),sharex=False,)
 
-    _, _, model_init_fit, model_tiny_fit, model_large_fit = plot_single_benchmark(
-        axes[0],
-        short_model_name(model_name),
-        model_arrays,
-    )
+    _, _, model_init_fit, model_tiny_fit, model_large_fit = plot_single_benchmark(axes[0],short_model_name(model_name),model_arrays,)
 
-    _, _, lj_init_fit, lj_tiny_fit, lj_large_fit = plot_single_benchmark(
-        axes[1],
-        short_model_name(lj_name),
-        lj_arrays,
-    )
+    _, _, lj_init_fit, lj_tiny_fit, lj_large_fit = plot_single_benchmark(axes[1],short_model_name(lj_name),lj_arrays,)
 
     fig.suptitle(json_path.name, fontsize=12)
     fig.tight_layout()
@@ -465,22 +368,22 @@ def plot_benchmark_file(json_path):
     print_fit("LJ tiny move", lj_tiny_fit)
     print_fit("LJ large move", lj_large_fit)
 
-    def safe_ratio(num, den):
-        if den is None:
-            return None
-        if abs(den["slope"]) < 1e-14:
-            return None
-        return num["slope"] / den["slope"]
+    # def safe_ratio(num, den):
+    #     if den is None:
+    #         return None
+    #     if abs(den["slope"]) < 1e-14:
+    #         return None
+    #     return num["slope"] / den["slope"]
 
-    if model_tiny_fit is not None and model_large_fit is not None:
-        ratio = safe_ratio(model_large_fit, model_tiny_fit)
-        if ratio is not None:
-            print(f"  Model large/tiny slope ratio: {ratio:.6g}")
+    # if model_tiny_fit is not None and model_large_fit is not None:
+    #     ratio = safe_ratio(model_large_fit, model_tiny_fit)
+    #     if ratio is not None:
+    #         print(f"  Model large/tiny slope ratio: {ratio:.6g}")
 
-    if lj_tiny_fit is not None and lj_large_fit is not None:
-        ratio = safe_ratio(lj_large_fit, lj_tiny_fit)
-        if ratio is not None:
-            print(f"  LJ large/tiny slope ratio: {ratio:.6g}")
+    # if lj_tiny_fit is not None and lj_large_fit is not None:
+    #     ratio = safe_ratio(lj_large_fit, lj_tiny_fit)
+    #     if ratio is not None:
+    #         print(f"  LJ large/tiny slope ratio: {ratio:.6g}")
 
     return fig
 

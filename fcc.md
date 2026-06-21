@@ -1,3 +1,37 @@
+# 2x2x2 mixed-species 
+
+## TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H-C-N-O-S_fcc_2x2x2
+
+### CPU
+<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H-C-N-O-S_fcc_cpu_2x2x2.png" width = "700">
+
+### CUDA 
+<img src = "plots_fcc/TorchML_Allegro_NikidisKyriakopoulosTohidKachrimanisKioseoglou_2024_HCNOS__MO_000000000000_000_LJ_baseline_H-C-N-O-S_fcc_cuda_2x2x2.png" width = "700">
+
+
+## TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al-Ni-Co-Fe-Cr-Mn_fcc_2x2x2
+
+### CPU 
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al-Ni-Co-Fe-Cr-Mn_fcc_cpu_2x2x2.png" width = "700">
+
+### CUDA
+<img src = "plots_fcc/TorchML_MACE_BatatiaBennerChiang_2023_MP0a_medium__MO_568776921807_000_LJ_baseline_Al-Ni-Co-Fe-Cr-Mn_fcc_cuda_2x2x2.png" width = "700">
+
+
+## TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc_2x2x2
+
+### CPU 
+
+<img src = "plots_fcc/TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc_cpu_2x2x2.png" width = "700">
+
+### CUDA
+
+<img src = "plots_fcc/TorchML_NequIP_GuptaTadmorMartiniani_2024_Si__MO_196181738937_001_LJ_baseline_Si_fcc_cuda_2x2x2.png" width = "700">
+
+
+
+
+
 ## SIM_LAMMPS_BUCKINGHAM
 ### Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Np
 <img src = "plots_fcc/Sim_LAMMPS_Buckingham_ArimaYoshidaMatsumoto_2014_PuUThNpO__SM_182981756100_000_LJ_baseline_Np_fcc.png">
